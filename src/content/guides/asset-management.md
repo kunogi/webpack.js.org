@@ -30,8 +30,7 @@ __dist/index.html__
 +    <title>管理资源</title>
     </head>
     <body>
--     <script src="./main.js"></script>
-+     <script src="./bundle.js"></script>
+     <script src="./main.js"></script>
     </body>
   </html>
 ```
@@ -44,8 +43,7 @@ __webpack.config.js__
   module.exports = {
     entry: './src/index.js',
     output: {
--     filename: 'main.js',
-+     filename: 'bundle.js',
+      filename: 'main.js',
       path: path.resolve(__dirname, 'dist')
     }
   };
